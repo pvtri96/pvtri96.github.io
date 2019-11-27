@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "description": "Personal portfolio",
   "scripts": {
-    "build": "gitfolio build pvtri96 --sort \"star\" --order \"desc\" --linkedin \"phamvantri\"",
-    "postbuild": "shx mv dist/* . && rm -rf dist"
+    "generate": "gitfolio build pvtri96 --sort \"star\" --order \"desc\" --linkedin \"phamvantri\"",
+    "postgenerate": "shx mv dist/* . && rm -rf dist"
   },
   "author": "",
   "license": "MIT",
