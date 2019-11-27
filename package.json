@@ -3,10 +3,13 @@
   "version": "0.1.0",
   "description": "Personal portfolio",
   "scripts": {
+    "build": "gitfolio build pvtri96 --sort \"star\" --order \"desc\" --linkedin \"phamvantri\"",
+    "postbuild": "shx mv dist/* . && rm -rf dist"
   },
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "gitfolio": "^0.1.5"
+    "gitfolio": "^0.1.5",
+    "shx": "^0.3.2"
   }
 }

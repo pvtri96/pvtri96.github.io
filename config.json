@@ -8,11 +8,8 @@
   "includeFork": false,
   "theme": "light.css",
   "types": [
-   "owner"
+   "all"
   ],
-  "twitter": null,
-  "linkedin": "phamvantri",
-  "medium": null,
-  "dribbble": null
+  "linkedin": "phamvantri"
  }
 ]
