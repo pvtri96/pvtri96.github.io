@@ -1,0 +1,12 @@
+{
+  "name": "portfolio",
+  "version": "0.1.0",
+  "description": "Personal portfolio",
+  "scripts": {
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "gitfolio": "^0.1.5"
+  }
+}
