@@ -146,14 +146,14 @@ body {
   left: 0;
 }
 
-#blog-display h1 {
+#blog-display h2 {
   font-size: 50px;
   color: var(--text-color);
   font-weight: bold;
   font-family: "Questrial", sans-serif;
 }
 
-#blog-display h2 {
+#blog-display h3 {
   color: var(--blog-gray-color);
 }
 
