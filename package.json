@@ -4,7 +4,7 @@
   "description": "Personal portfolio",
   "scripts": {
     "generate": "gitfolio build pvtri96 --sort \"star\" --order \"desc\" --linkedin \"phamvantri\"",
-    "postgenerate": "shx mv dist/* . && rm -rf dist"
+    "postgenerate": "shx mv dist/* . && shx rm -rf dist"
   },
   "author": "",
   "license": "MIT",
