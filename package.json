@@ -39,7 +39,7 @@
   ],
   "license": "MIT",
   "scripts": {
-    "deploy": "gatsby build && gh-pages -d public",
+    "deploy": "gh-pages -d public",
     "build": "gatsby build",
     "start": "gatsby develop -o",
     "lint": "eslint .",
