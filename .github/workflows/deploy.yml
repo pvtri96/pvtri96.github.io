@@ -32,6 +32,10 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Build
         run: npm run build
+        env:
+          GATSBY_PORTFOLIO_GITHUB_TOKEN: ${{ secrets.GATSBY_PORTFOLIO_GITHUB_TOKEN }}
+          GATSBY_PORTFOLIO_FORMIK_ENDPOINT: ${{ secrets.GATSBY_PORTFOLIO_FORMIK_ENDPOINT }}
+          GATSBY_PORTFOLIO_RECAPTCHA_KEY: ${{ secrets.GATSBY_PORTFOLIO_RECAPTCHA_KEY }}
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
