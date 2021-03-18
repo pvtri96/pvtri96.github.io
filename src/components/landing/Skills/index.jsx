@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { ThemeContext } from 'providers/ThemeProvider';
 import { Container, Button } from 'components/common';
-import a12dev from 'assets/illustrations/A12-Architektur.png';
+import a12dev from 'assets/img/A12-Architektur.png';
 import jsFrameworks from 'assets/illustrations/jsframeworks.svg';
 import onlineCv from 'assets/illustrations/online-cv.svg';
 import { Wrapper, SkillsWrapper, Details, Thumbnail } from './styles';
