@@ -3,7 +3,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { ThemeContext } from 'providers/ThemeProvider';
 import { Container, Button } from 'components/common';
 import a12dev from 'assets/illustrations/A12-Architektur.png';
-import dev from 'assets/illustrations/skills.svg';
+import jsframeworks from 'assets/illustrations/jsframeworks.svg';
 import { Wrapper, SkillsWrapper, Details, Thumbnail } from './styles';
 
 export const Skills = () => {
@@ -38,7 +38,7 @@ export const Skills = () => {
           </Button>
         </Details>
         <Thumbnail>
-          <img src={dev} alt="Personal hobby" />
+          <img src={jsframeworks} alt="Personal hobby" />
         </Thumbnail>
       </SkillsWrapper>
     </Wrapper>

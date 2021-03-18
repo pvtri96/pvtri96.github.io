@@ -23,6 +23,7 @@ export const Details = styled.div`
   border-radius: 6px;
   flex: 1;
   padding-left: 2rem;
+  margin-bottom: 1rem;
 
   @media (max-width: 960px) {
     padding-left: unset;
