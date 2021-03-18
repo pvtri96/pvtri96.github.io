@@ -1,6 +1,6 @@
 module.exports = {
   defaultTitle: 'Tri Van Pham',
-  logo: 'https://tripham.dev/favicon/favicon-512.png',
+  logo: 'https://tripham.dev/favicon/favicon.png',
   author: 'Tri Van Pham',
   url: 'https://tripham.dev',
   legalName: 'Tri Van Pham',
@@ -8,6 +8,7 @@ module.exports = {
   socialLinks: {
     github: 'https://github.com/pvtri96',
     linkedin: 'https://www.linkedin.com/in/phamvantri/',
+    facebook: 'https://www.facebook.com/pvtri96/',
   },
   googleAnalyticsID: 'G-6E92L3ZBM4',
   themeColor: '#6b63ff',

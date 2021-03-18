@@ -1,25 +1,26 @@
 import React from 'react';
 import { Container } from 'components/common';
 import { FaLinkedin, FaGithub, FaFacebook } from 'react-icons/fa';
+import config from 'data/config';
 import { Wrapper, Flex, Links, Details } from './styles';
 
 export const social = [
   {
     id: 1,
     name: 'Github',
-    link: 'https://github.com/pvtri96',
+    link: config.socialLinks.github,
     icon: <FaGithub />,
   },
   {
     id: 2,
     name: 'Linkedin',
-    link: 'https://www.linkedin.com/in/phamvantri/',
+    link: config.socialLinks.linkedin,
     icon: <FaLinkedin />,
   },
   {
     id: 3,
     name: 'Facebook',
-    link: 'https://www.facebook.com/pvtri96/',
+    link: config.socialLinks.facebook,
     icon: <FaFacebook />,
   },
 ];
