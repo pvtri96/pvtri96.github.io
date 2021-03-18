@@ -4,7 +4,8 @@ module.exports = {
   author: 'Tri Van Pham',
   url: 'https://tripham.dev',
   legalName: 'Tri Van Pham',
-  defaultDescription: 'I’m Tri and I’m a Frontend & Devops engineer!',
+  defaultDescription:
+    'Passionated software engineer who loves planning, architecting and implementing WebApplication as a whole. Experience in building libraries which are used by a big group ofinternal developers.',
   socialLinks: {
     github: 'https://github.com/pvtri96',
     linkedin: 'https://www.linkedin.com/in/phamvantri/',
