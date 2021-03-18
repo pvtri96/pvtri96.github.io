@@ -4,7 +4,6 @@ import { ThemeContext } from 'providers/ThemeProvider';
 import { Header } from 'components/theme';
 import { Container, Button } from 'components/common';
 import dev from 'assets/illustrations/dev.svg';
-import config from 'data/config';
 import { Wrapper, IntroWrapper, Details, Thumbnail } from './styles';
 
 export const Intro = () => {
@@ -16,13 +15,13 @@ export const Intro = () => {
       <IntroWrapper as={Container}>
         <Details theme={theme}>
           <h1>Hi There!</h1>
-          <h4>{config.defaultDescription}</h4>
+          <h4>I’m Tri and I’m a Frontend & Devops engineer!</h4>
           <Button as={AnchorLink} href="#contact">
             Contact me
           </Button>
         </Details>
         <Thumbnail>
-          <img src={dev} alt="I’m John and I’m a JAMStack engineer!" />
+          <img src={dev} alt="I’m Tri and I’m a Frontend & Devops engineer!" />
         </Thumbnail>
       </IntroWrapper>
     </Wrapper>
