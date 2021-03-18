@@ -30,9 +30,10 @@ export const Links = styled.div`
   align-items: center;
 
   a {
-    margin: 0 0.5rem;
+    margin: 0 0.25rem;
+    font-size: 16pt;
 
-    img {
+    svg {
       margin: 0;
     }
 

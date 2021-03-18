@@ -1,8 +1,8 @@
 module.exports = {
   defaultTitle: 'Tri Van Pham',
-  logo: 'https://portfolio.smakosh.com/favicon/favicon-512.png',
+  logo: 'https://tripham.dev/favicon/favicon-512.png',
   author: 'Tri Van Pham',
-  url: 'https://portfolio.smakosh.com',
+  url: 'https://tripham.dev',
   legalName: 'Tri Van Pham',
   defaultDescription: 'I’m Tri and I’m a Frontend & Devops engineer!',
   socialLinks: {
