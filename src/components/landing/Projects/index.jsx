@@ -25,6 +25,7 @@ export const Projects = () => {
                   id
                   name
                   url
+                  homepageUrl
                   description
                   stargazers {
                     totalCount
@@ -52,7 +53,7 @@ export const Projects = () => {
           <Item key={node.id} as="a" href={node.url} target="_blank" rel="noopener noreferrer" theme={theme}>
             <Card theme={theme}>
               <Content>
-                <h4>{node.name}</h4>
+                <h4>{node.homepageUrl ? <a href={node.homepageUrl}>{node.name}</a> : node.name}</h4>
                 <p>{node.description}</p>
               </Content>
               <TitleWrap>
