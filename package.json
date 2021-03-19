@@ -54,7 +54,7 @@
     "eslint": "5.16.0",
     "eslint-config-airbnb": "17.1.1",
     "eslint-config-prettier": "4.3.0",
-    "eslint-config-wesbos": "0.0.19",
+    "eslint-config-wesbos": "0.0.23",
     "eslint-plugin-html": "5.0.5",
     "eslint-plugin-import": "2.22.1",
     "eslint-plugin-jsx-a11y": "6.4.1",
