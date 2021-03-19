@@ -6,7 +6,7 @@
   "author": "Tri Van Pham <pvtri96@gmail.com>",
   "dependencies": {
     "axios": "0.21.1",
-    "dotenv": "6.2.0",
+    "dotenv": "8.2.0",
     "formik": "2.2.6",
     "gatsby": "3.1.1",
     "gatsby-image": "3.1.0",
