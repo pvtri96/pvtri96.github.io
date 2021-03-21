@@ -30,11 +30,11 @@ export const Links = styled.div`
   align-items: center;
 
   a {
-    margin: 0 0.25rem;
+    margin: 0 0.75rem;
     font-size: 16pt;
 
     svg {
-      margin: 0;
+      font-size: 1.5rem;
     }
 
     &:first-child,

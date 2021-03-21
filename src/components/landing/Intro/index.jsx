@@ -1,11 +1,12 @@
+import { Button, Container } from 'components/common';
+import { Header } from 'components/theme';
+import { StaticImage } from 'gatsby-plugin-image';
+import { ThemeContext } from 'providers/ThemeProvider';
 import React, { useContext } from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-import { ThemeContext } from 'providers/ThemeProvider';
-import { Header } from 'components/theme';
-import { Container, Button } from 'components/common';
-import dev from 'assets/illustrations/dev.svg';
-import { Wrapper, IntroWrapper, Details, Thumbnail } from './styles';
+import { Details, IntroWrapper, Thumbnail, Wrapper } from './styles';
 
+const BASE_ASSETS_DIR = "../../../assets";
 export const Intro = () => {
   const { theme } = useContext(ThemeContext);
 
@@ -21,7 +22,7 @@ export const Intro = () => {
           </Button>
         </Details>
         <Thumbnail>
-          <img src={dev} alt="I’m Tri and I’m a Frontend & Devops engineer!" />
+          <StaticImage src={`${BASE_ASSETS_DIR}/illustrations/dev.svg`} alt="I’m Tri and I’m a Frontend & Devops engineer!" />
         </Thumbnail>
       </IntroWrapper>
     </Wrapper>
