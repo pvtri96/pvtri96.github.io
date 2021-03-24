@@ -1,9 +1,11 @@
+import jsFrameworks from 'assets/illustrations/jsframeworks.svg';
+import onlineCv from 'assets/illustrations/online-cv.svg';
+import { Button, Container } from 'components/common';
+import { StaticImage } from 'gatsby-plugin-image';
+import { ThemeContext } from 'providers/ThemeProvider';
 import React, { useContext } from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-import { ThemeContext } from 'providers/ThemeProvider';
-import { Container, Button } from 'components/common';
-import { Wrapper, SkillsWrapper, Details, Thumbnail } from './styles';
-import { StaticImage } from 'gatsby-plugin-image';
+import { Details, SkillsWrapper, Thumbnail, Wrapper } from './styles';
 
 const BASE_ASSETS_DIR = "../../../assets"
 export const Skills = () => {
@@ -13,7 +15,7 @@ export const Skills = () => {
     <Wrapper id="about">
       <SkillsWrapper as={Container}>
         <Thumbnail>
-          <StaticImage src={`${BASE_ASSETS_DIR}/img/A12-Architektur.png`} alt="A12 introduction" />
+          <StaticImage src={`${BASE_ASSETS_DIR}/img/A12-Architektur.png`} alt="A12 introduction" placeholder="none" />
         </Thumbnail>
         <Details theme={theme}>
           <h1>Working at mgm technology partners</h1>
@@ -38,12 +40,12 @@ export const Skills = () => {
           </Button>
         </Details>
         <Thumbnail>
-          <StaticImage src={`${BASE_ASSETS_DIR}/illustrations/jsframeworks.svg`} alt="Personal hobby" />
+          <img src={jsFrameworks} alt="Personal hobby" />
         </Thumbnail>
       </SkillsWrapper>
       <SkillsWrapper as={Container}>
         <Thumbnail>
-          <StaticImage src={`${BASE_ASSETS_DIR}/illustrations/online-cv.svg`} alt="CV" />
+          <img src={onlineCv} alt="CV" />
         </Thumbnail>
         <Details theme={theme}>
           <h1>CV</h1>
