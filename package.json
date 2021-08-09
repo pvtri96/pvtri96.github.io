@@ -8,7 +8,7 @@
     "axios": "0.21.1",
     "dotenv": "10.0.0",
     "formik": "2.2.9",
-    "gatsby": "3.11.0",
+    "gatsby": "3.11.1",
     "gatsby-plugin-canonical-urls": "3.11.0",
     "gatsby-plugin-google-gtag": "3.11.0",
     "gatsby-plugin-image": "1.11.0",
