@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   defaultTitle: "Tri Van Pham",
   logo: "https://tripham.dev/favicon/favicon.png",
   author: "Tri Van Pham",
