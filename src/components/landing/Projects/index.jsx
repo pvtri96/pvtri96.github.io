@@ -8,52 +8,82 @@ import { Wrapper, Grid, Item, Content, Stats, Languages } from './styles';
 
 export const Projects = () => {
   const { theme } = useContext(ThemeContext);
-  const {
-    github: {
-      viewer: {
-        repositories: { edges },
-      },
-    },
-  } = useStaticQuery(
+
+  const { github } = useStaticQuery(
     graphql`
       {
         github {
-          viewer {
-            repositories(first: 3, orderBy: { field: STARGAZERS, direction: DESC }) {
-              edges {
-                node {
-                  id
-                  name
-                  url
-                  homepageUrl
-                  description
-                  stargazers {
-                    totalCount
-                  }
-                  forkCount
-                  languages(first: 3) {
-                    nodes {
-                      id
-                      name
-                    }
-                  }
-                }
-              }
-            }
+          repository1: repository(name: "react-starter", owner: "pvtri96") {
+            ...RepoInfo
+          }
+          repository2: repository(name: "re-radio", owner: "pvtri96") {
+            ...RepoInfo
+          }
+          repository3: repository(name: "team-radio", owner: "mgm-interns") {
+            ...RepoInfo
+          }
+          repository4: repository(
+            name: "acm-client"
+            owner: "sunway-official"
+          ) {
+            ...RepoInfo
+          }
+          repository5: repository(
+            name: "acm-server"
+            owner: "sunway-official"
+          ) {
+            ...RepoInfo
+          }
+          repository6: repository(name: "poe-oil-rigs", owner: "pvtri96") {
+            ...RepoInfo
+          }
+        }
+      }
+
+      fragment RepoInfo on GitHub_Repository {
+        id
+        name
+        url
+        homepageUrl
+        description
+        stargazers {
+          totalCount
+        }
+        forkCount
+        languages(first: 3) {
+          nodes {
+            id
+            name
           }
         }
       }
     `
   );
+
+  const edges = Object.values(github);
+
   return (
     <Wrapper as={Container} id="projects">
       <h2>Open Source Projects</h2>
       <Grid>
-        {edges.map(({ node }) => (
-          <Item key={node.id} as="a" href={node.url} target="_blank" rel="noopener noreferrer" theme={theme}>
+        {edges.map((node) => (
+          <Item
+            key={node.id}
+            as="a"
+            href={node.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            theme={theme}
+          >
             <Card theme={theme}>
               <Content>
-                <h4>{node.homepageUrl ? <a href={node.homepageUrl}>{node.name}</a> : node.name}</h4>
+                <h4>
+                  {node.homepageUrl ? (
+                    <a href={node.homepageUrl}>{node.name}</a>
+                  ) : (
+                    node.name
+                  )}
+                </h4>
                 <p>{node.description}</p>
               </Content>
               <TitleWrap>
