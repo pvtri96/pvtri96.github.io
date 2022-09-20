@@ -1,10 +1,10 @@
-import React, { useContext } from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
-import { ThemeContext } from 'providers/ThemeProvider';
-import { Container, Card, TitleWrap } from 'components/common';
-import Star from 'components/common/Icons/Star';
-import Fork from 'components/common/Icons/Fork';
-import { Wrapper, Grid, Item, Content, Stats, Languages } from './styles';
+import React, { useContext } from "react";
+import { useStaticQuery, graphql } from "gatsby";
+import { ThemeContext } from "providers/ThemeProvider";
+import { Container, Card, TitleWrap } from "components/common";
+import Star from "components/common/Icons/Star";
+import Fork from "components/common/Icons/Fork";
+import { Wrapper, Grid, Item, Content, Stats, Languages } from "./styles";
 
 export const Projects = () => {
   const { theme } = useContext(ThemeContext);
@@ -22,16 +22,10 @@ export const Projects = () => {
           repository3: repository(name: "team-radio", owner: "mgm-interns") {
             ...RepoInfo
           }
-          repository4: repository(
-            name: "acm-client"
-            owner: "sunway-official"
-          ) {
+          repository4: repository(name: "acm-client", owner: "sunway-official") {
             ...RepoInfo
           }
-          repository5: repository(
-            name: "acm-server"
-            owner: "sunway-official"
-          ) {
+          repository5: repository(name: "acm-server", owner: "sunway-official") {
             ...RepoInfo
           }
           repository6: repository(name: "poe-oil-rigs", owner: "pvtri96") {
@@ -67,33 +61,20 @@ export const Projects = () => {
       <h2>Open Source Projects</h2>
       <Grid>
         {edges.map((node) => (
-          <Item
-            key={node.id}
-            as="a"
-            href={node.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            theme={theme}
-          >
+          <Item key={node.id} as="a" href={node.url} target="_blank" rel="noopener noreferrer" theme={theme}>
             <Card theme={theme}>
               <Content>
-                <h4>
-                  {node.homepageUrl ? (
-                    <a href={node.homepageUrl}>{node.name}</a>
-                  ) : (
-                    node.name
-                  )}
-                </h4>
+                <h4>{node.homepageUrl ? <a href={node.homepageUrl}>{node.name}</a> : node.name}</h4>
                 <p>{node.description}</p>
               </Content>
               <TitleWrap>
                 <Stats theme={theme}>
                   <div>
-                    <Star color={theme === 'light' ? '#000' : '#fff'} />
+                    <Star color={theme === "light" ? "#000" : "#fff"} />
                     <span>{node.stargazers.totalCount}</span>
                   </div>
                   <div>
-                    <Fork color={theme === 'light' ? '#000' : '#fff'} />
+                    <Fork color={theme === "light" ? "#000" : "#fff"} />
                     <span>{node.forkCount}</span>
                   </div>
                 </Stats>

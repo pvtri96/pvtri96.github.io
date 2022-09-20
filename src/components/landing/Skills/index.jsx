@@ -1,13 +1,13 @@
-import jsFrameworks from 'assets/illustrations/jsframeworks.svg';
-import onlineCv from 'assets/illustrations/online-cv.svg';
-import { Button, Container } from 'components/common';
-import { StaticImage } from 'gatsby-plugin-image';
-import { ThemeContext } from 'providers/ThemeProvider';
-import React, { useContext } from 'react';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
-import { Details, SkillsWrapper, Thumbnail, Wrapper } from './styles';
+import jsFrameworks from "assets/illustrations/jsframeworks.svg";
+import onlineCv from "assets/illustrations/online-cv.svg";
+import { Button, Container } from "components/common";
+import { StaticImage } from "gatsby-plugin-image";
+import { ThemeContext } from "providers/ThemeProvider";
+import React, { useContext } from "react";
+import AnchorLink from "react-anchor-link-smooth-scroll";
+import { Details, SkillsWrapper, Thumbnail, Wrapper } from "./styles";
 
-const BASE_ASSETS_DIR = "../../../assets"
+const BASE_ASSETS_DIR = "../../../assets";
 export const Skills = () => {
   const { theme } = useContext(ThemeContext);
 

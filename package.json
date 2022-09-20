@@ -43,8 +43,8 @@
     "deploy": "gh-pages -d public",
     "build": "gatsby build",
     "start": "gatsby develop -o",
-    "lint": "eslint src",
-    "lint:fix": "eslint src --fix",
+    "lint": "eslint --ext .jsx --ext .js src",
+    "lint:fix": "npm run lint -- --fix",
     "reset": "rm -rf .cache/ public/",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
   },

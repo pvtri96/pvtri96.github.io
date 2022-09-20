@@ -1,35 +1,33 @@
-import React from 'react';
-import axios from 'axios';
-import { Formik, Form, FastField, ErrorMessage } from 'formik';
-import Recaptcha from 'react-google-recaptcha';
-import * as Yup from 'yup';
-import { Button, Input } from 'components/common';
-import { Error, Center, InputField } from './styles';
+import React from "react";
+import axios from "axios";
+import { Formik, Form, FastField, ErrorMessage } from "formik";
+import Recaptcha from "react-google-recaptcha";
+import * as Yup from "yup";
+import { Button, Input } from "components/common";
+import { Error, Center, InputField } from "./styles";
 
 export default () => (
   <Formik
     initialValues={{
-      name: '',
-      email: '',
-      message: '',
-      recaptcha: '',
+      name: "",
+      email: "",
+      message: "",
+      recaptcha: "",
       success: false,
     }}
     validationSchema={Yup.object().shape({
-      name: Yup.string().required('Full name field is required'),
-      email: Yup.string()
-        .email('Invalid email')
-        .required('Email field is required'),
-      message: Yup.string().required('Message field is required'),
-      recaptcha: Yup.string().required('Robots are not welcome yet!'),
+      name: Yup.string().required("Full name field is required"),
+      email: Yup.string().email("Invalid email").required("Email field is required"),
+      message: Yup.string().required("Message field is required"),
+      recaptcha: Yup.string().required("Robots are not welcome yet!"),
     })}
     onSubmit={async ({ name, email, message }, { setSubmitting, resetForm, setFieldValue }) => {
       try {
         await axios({
-          method: 'POST',
+          method: "POST",
           url: `${process.env.GATSBY_PORTFOLIO_FORMIK_ENDPOINT}`,
           headers: {
-            'Content-Type': 'application/json',
+            "Content-Type": "application/json",
           },
           data: JSON.stringify({
             name,
@@ -38,11 +36,11 @@ export default () => (
           }),
         });
         setSubmitting(false);
-        setFieldValue('success', true);
+        setFieldValue("success", true);
         setTimeout(() => resetForm(), 6000);
       } catch (err) {
         setSubmitting(false);
-        setFieldValue('success', false);
+        setFieldValue("success", false);
 				alert('Something went wrong, please try again!') // eslint-disable-line
       }
     }}
@@ -94,7 +92,7 @@ export default () => (
               component={Recaptcha}
               sitekey={process.env.GATSBY_PORTFOLIO_RECAPTCHA_KEY}
               name="recaptcha"
-              onChange={value => setFieldValue('recaptcha', value)}
+              onChange={(value) => setFieldValue("recaptcha", value)}
             />
             <ErrorMessage component={Error} name="recaptcha" />
           </InputField>
