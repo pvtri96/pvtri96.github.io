@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Wrapper = styled.div`
   z-index: 5;
@@ -46,7 +46,7 @@ export const Bar = styled.div`
     top &&
     sidebar &&
     `
-		background-color: ${theme === 'light' ? '#212121' : '#fff'};
+		background-color: ${theme === "light" ? "#212121" : "#fff"};
 		transform: translateY(8px) rotate(-135deg);
 		
 	`}
@@ -62,7 +62,7 @@ export const Bar = styled.div`
     bottom &&
     sidebar &&
     `
-			background-color: ${theme === 'light' ? '#212121' : '#fff'};
+			background-color: ${theme === "light" ? "#212121" : "#fff"};
 			transform: translateY(-6px) rotate(-45deg);
 	`}
 `;

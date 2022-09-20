@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Wrapper = styled.div`
   position: fixed;
@@ -9,7 +9,7 @@ export const Wrapper = styled.div`
   width: 0;
   opacity: 0;
   height: 100%;
-  background-color: ${({ theme }) => (theme === 'light' ? '#fff' : '#212121')};
+  background-color: ${({ theme }) => (theme === "light" ? "#fff" : "#212121")};
   transition: all 350ms cubic-bezier(0.6, 0.05, 0.28, 0.91);
 
   ${({ active }) =>
@@ -29,6 +29,6 @@ export const Wrapper = styled.div`
 	`}
 
   img {
-    filter: ${({ theme }) => (theme === 'dark' ? 'invert(100%)' : 'invert(0);')};
+    filter: ${({ theme }) => (theme === "dark" ? "invert(100%)" : "invert(0);")};
   }
 `;

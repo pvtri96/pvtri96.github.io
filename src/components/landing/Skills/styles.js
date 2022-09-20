@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import detailsIllustration from 'assets/illustrations/details.svg';
+import styled from "styled-components";
+import detailsIllustration from "assets/illustrations/details.svg";
 
 export const Wrapper = styled.div`
   background-image: url(${detailsIllustration});
@@ -34,8 +34,8 @@ export const Details = styled.div`
     margin: 1rem;
     margin-bottom: 2rem;
     font-size: 26pt;
-    color: ${({ theme }) => (theme === 'dark' ? '#fff' : '#212121')};
-    mix-blend-mode: ${({ theme }) => (theme === 'light' ? 'unset' : 'difference')};
+    color: ${({ theme }) => (theme === "dark" ? "#fff" : "#212121")};
+    mix-blend-mode: ${({ theme }) => (theme === "light" ? "unset" : "difference")};
   }
 
   p {
@@ -44,8 +44,8 @@ export const Details = styled.div`
     font-size: 20pt;
     font-weight: normal;
     line-height: 1.3;
-    color: ${({ theme }) => (theme === 'dark' ? '#f8f8f8' : '#707070')};
-    mix-blend-mode: ${({ theme }) => (theme === 'light' ? 'unset' : 'difference')};
+    color: ${({ theme }) => (theme === "dark" ? "#f8f8f8" : "#707070")};
+    mix-blend-mode: ${({ theme }) => (theme === "light" ? "unset" : "difference")};
   }
 
   a {

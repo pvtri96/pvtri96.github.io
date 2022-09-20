@@ -1,5 +1,5 @@
-import { Layout, SEO } from 'components/common';
-import React from 'react';
+import { Layout, SEO } from "components/common";
+import React from "react";
 
 export default function Page404() {
   return (

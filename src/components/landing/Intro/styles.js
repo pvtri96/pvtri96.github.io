@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import overlayIllustration from 'assets/illustrations/overlay.svg';
+import styled from "styled-components";
+import overlayIllustration from "assets/illustrations/overlay.svg";
 
 export const Wrapper = styled.div`
   padding-bottom: 4rem;
@@ -31,10 +31,10 @@ export const Details = styled.div`
   h1 {
     margin-bottom: 2rem;
     font-size: 36pt;
-    color: ${({ theme }) => (theme === 'light' ? '#212121' : '#fff')};
+    color: ${({ theme }) => (theme === "light" ? "#212121" : "#fff")};
 
     @media (max-width: 960px) {
-      mix-blend-mode: ${({ theme }) => (theme === 'light' ? 'unset' : 'difference')};
+      mix-blend-mode: ${({ theme }) => (theme === "light" ? "unset" : "difference")};
     }
 
     @media (max-width: 680px) {
@@ -46,10 +46,10 @@ export const Details = styled.div`
     margin-bottom: 2.5rem;
     font-size: 32pt;
     font-weight: normal;
-    color: ${({ theme }) => (theme === 'light' ? '#707070' : '#e6e6e6')};
+    color: ${({ theme }) => (theme === "light" ? "#707070" : "#e6e6e6")};
 
     @media (max-width: 960px) {
-      mix-blend-mode: ${({ theme }) => (theme === 'light' ? 'unset' : 'difference')};
+      mix-blend-mode: ${({ theme }) => (theme === "light" ? "unset" : "difference")};
     }
 
     @media (max-width: 680px) {
