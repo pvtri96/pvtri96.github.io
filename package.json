@@ -6,6 +6,7 @@
   "author": "Tri Van Pham <pvtri96@gmail.com>",
   "dependencies": {
     "axios": "0.27.2",
+    "deepmerge": "^4.2.2",
     "dotenv": "16.0.2",
     "formik": "2.2.9",
     "gatsby": "4.23.0",
