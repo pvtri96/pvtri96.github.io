@@ -1,11 +1,13 @@
-const config = require("./src/data/config");
-
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 require("dotenv").config({ path: `.env` });
 
-module.exports = {
+import type { GatsbyConfig } from "gatsby";
+import config from "./src/data/config";
+
+const gatsbyConfig: GatsbyConfig = {
   siteMetadata: {
-    title: config.defaultTitle,
-    description: config.defaultDescription,
+    title: config.title,
+    description: config.description,
     author: config.author,
   },
   plugins: [
@@ -41,7 +43,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        name: config.defaultTitle,
+        name: config.title,
         background_color: config.backgroundColor,
         theme_color: config.themeColor,
         short_name: "starter",
@@ -75,3 +77,5 @@ module.exports = {
     "gatsby-plugin-offline",
   ],
 };
+
+export default gatsbyConfig;

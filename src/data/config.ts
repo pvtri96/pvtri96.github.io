@@ -1,10 +1,10 @@
-module.exports = {
-  defaultTitle: "Tri Van Pham",
+export default {
+  title: "Tri Van Pham",
   logo: "https://tripham.dev/favicon/favicon.png",
   author: "Tri Van Pham",
   url: "https://tripham.dev",
   legalName: "Tri Van Pham",
-  defaultDescription:
+  description:
     "Passionate software engineer who loves planning, architecting and implementing WebApplication as a whole. Experience in building libraries which are used by a big group of internal developers.",
   socialLinks: {
     github: "https://github.com/pvtri96",

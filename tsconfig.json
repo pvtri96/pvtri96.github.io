@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "types": ["./src/types"],
+    "paths": {
+      "assets": ["src/assets"],
+      "components": ["src/components"],
+      "data": ["src/data"],
+      "pages": ["src/pages"],
+      "hooks": ["src/hooks"],
+      "providers": ["src/providers"]
+    },
+    "esModuleInterop": true,
+    "noEmit": true,
+    "jsx": "react",
+    "allowJs": true
+  }
+}
