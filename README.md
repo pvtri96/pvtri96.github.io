@@ -54,14 +54,12 @@ Project on [Behance](https://www.behance.net/gallery/74172961/Free-Gatsby-portfo
 - Google recaptcha public key
 - Github token
 
-Trigger the deployment manually on [Github Actions](https://github.com/pvtri96/pvtri96.github.io/actions/workflows/deploy.yml)
-
 ### Locally
 
 1. Create an account at [Formik](https://formik.com/?utm_source=smakosh)
 2. Grab a Google recaptcha key from [Google Recaptcha](https://www.google.com/recaptcha/admin)
 3. Grab your Github token from GitHub
-4. Run `cp .env.development.template .env.development`
+4. Run `cp .env.development.template .env`
 5. Run `npm install && npm start`
 
 ### Deploying locally
@@ -116,7 +114,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 - [Benjamin Lo](https://github.com/benji011) https://github.com/smakosh/gatsby-portfolio-dev/pull/40
 - [Yassine Rais](https://github.com/yassinrais) https://github.com/smakosh/gatsby-portfolio-dev/pull/41
 - [Smakosh](https://smakosh.com)
+- [Tri Van PHam](https://tripham.dev)
 
-## Support
-
-If you love this Gatsby template and want to support Smakosh, you can do so through his [page](https://smakosh.com).
