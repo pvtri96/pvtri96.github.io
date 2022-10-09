@@ -1,17 +1,12 @@
 {
   "parser": "@typescript-eslint/parser",
   "plugins": ["@typescript-eslint", "import", "jsx-a11y"],
-  "parserOptions": {
-    "sourceType": "module",
-    "ecmaVersion": 2022
-  },
   "env": {
     "browser": true,
     "node": true
   },
   "extends": ["plugin:prettier/recommended", "plugin:react/recommended", "plugin:@typescript-eslint/recommended"],
   "rules": {
-    "no-console": 2,
     "import/no-unresolved": 0,
     "react/display-name": 0,
     "react/prop-types": 0

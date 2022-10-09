@@ -3,26 +3,31 @@ import Helmet from "react-helmet";
 import Thumbnail from "assets/thumbnail/thumbnail.png";
 import config from "data/config";
 
-export const SEO = () => {
+interface Props {
+  title?: string;
+  location?: string;
+}
+
+export const SEO: React.FC<Props> = (props) => {
   const structuredDataOrganization = useStructuredDataOrganization();
   return (
     <Helmet>
       <meta name="description" content={config.description} />
       <meta name="image" content={Thumbnail} />
 
-      <meta property="og:url" content={`${config.url}`} />
+      <meta property="og:url" content={`${config.url}${props.location ?? ""}`} />
       <meta property="og:type" content="website" />
-      <meta property="og:title" content={config.title} />
+      <meta property="og:title" content={props.title ?? config.title} />
       <meta property="og:description" content={config.description} />
       <meta property="og:image" content={Thumbnail} />
       <meta property="fb:app_id" content={config.social.facebook} />
 
       <meta name="twitter:card" content="summary" />
-      <meta name="twitter:title" content={config.title} />
+      <meta name="twitter:title" content={props.title ?? config.title} />
       <meta name="twitter:description" content={config.description} />
       <meta name="twitter:image:src" content={Thumbnail} />
       <script type="application/ld+json">{structuredDataOrganization}</script>
-      <title>{config.title}</title>
+      <title>{props.title ?? config.title}</title>
       <html lang="en" dir="ltr" />
     </Helmet>
   );

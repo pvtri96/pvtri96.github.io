@@ -4,7 +4,11 @@ import { ThemeContext } from "providers/ThemeProvider";
 import ToggleTheme from "components/theme/Header/ToggleTheme";
 import { Wrapper } from "./styles";
 
-const NavbarLinks = ({ desktop }) => {
+interface Props {
+  desktop?: boolean;
+}
+
+const NavbarLinks: React.FC<Props> = ({ desktop }) => {
   const { theme } = useContext(ThemeContext);
 
   return (

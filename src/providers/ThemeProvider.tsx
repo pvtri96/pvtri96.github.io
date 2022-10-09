@@ -1,5 +1,5 @@
 import React, { createContext } from "react";
-import useDarkMode from "hooks/useDarkMode";
+import { useDarkMode } from "hooks/useDarkMode";
 
 export const ThemeContext = createContext<{
   theme: ReturnType<typeof useDarkMode>[0];
