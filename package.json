@@ -9,7 +9,7 @@
     "deepmerge": "4.2.2",
     "dotenv": "16.0.3",
     "formik": "2.2.9",
-    "gatsby": "4.24.5",
+    "gatsby": "4.24.6",
     "gatsby-plugin-canonical-urls": "4.24.0",
     "gatsby-plugin-google-gtag": "4.24.0",
     "gatsby-plugin-image": "2.24.0",
