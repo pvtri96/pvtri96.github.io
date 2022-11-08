@@ -71,5 +71,8 @@
   },
   "bugs": {
     "url": "https://github.com/pvtri96/pvtri96.github.io/issues"
+  },
+  "volta": {
+    "node": "18.12.1"
   }
 }
