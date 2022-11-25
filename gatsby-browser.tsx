@@ -16,8 +16,12 @@ export const onServiceWorkerUpdateReady: GatsbyBrowser["onServiceWorkerUpdateRea
 };
 
 export const wrapRootElement: GatsbyBrowser["wrapRootElement"] = ({ element }) => (
-  <ThemeProvider>
+  <ThemeProvider>{element}</ThemeProvider>
+);
+
+export const wrapPageElement: GatsbyBrowser["wrapPageElement"] = ({ element }) => (
+  <>
     {element}
     <ToastContainer />
-  </ThemeProvider>
+  </>
 );
