@@ -50,8 +50,8 @@
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "6.4.0",
-    "@typescript-eslint/parser": "6.4.0",
+    "@typescript-eslint/eslint-plugin": "6.4.1",
+    "@typescript-eslint/parser": "6.4.1",
     "@babel/eslint-parser": "7.22.10",
     "babel-plugin-styled-components": "2.1.4",
     "eslint": "8.47.0",
