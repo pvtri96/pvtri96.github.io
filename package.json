@@ -7,7 +7,7 @@
   "dependencies": {
     "axios": "1.6.5",
     "deepmerge": "4.3.1",
-    "dotenv": "16.4.0",
+    "dotenv": "16.4.1",
     "formik": "2.4.5",
     "gatsby": "4.25.8",
     "gatsby-plugin-canonical-urls": "4.25.0",
