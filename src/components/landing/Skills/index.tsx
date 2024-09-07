@@ -23,7 +23,7 @@ export const Skills = () => {
             The mgm A12 Enterprise Low Code Platform allows you to develop and use complex enterprise applications more
             efficiently and innovatively throughout their entire life cycle.
           </p>
-          <Button as="a" href="https://a12.mgm-tp.com/index_en.html">
+          <Button as="a" href="https://www.mgm-tp.com/">
             See more
           </Button>
         </Details>
